@@ -1,0 +1,287 @@
+
+*{
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Mono", monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color:white;
+
+}
+.navbar{
+    display: flex;
+    width: 84%;
+    height: auto;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.linkitem{
+    margin: 10px;
+}
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.links:hover{
+    color: rgb(182, 2, 2);
+}
+
+.title{
+    margin-top: 13%;
+    margin-left: 10%;
+}
+.lastname{
+    color: rgb(200, 14, 14);
+}
+.title_h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.download{
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: brown;
+    display: inline-block;
+    text-decoration: none;
+}
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+}
+.img-container{
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    top: 100px;
+    /* background-color: blue; */
+    right: -30px;
+    bottom: 0px;
+    /* display: flex; */
+}
+.imagegroup{
+    height:90%;
+    position: absolute;
+    /* top: 15px; */
+    /* background-color: blue; */
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+    
+}
+.img-container:hover #girl{
+    left: 40%;
+}
+.img-container:hover #shape{
+
+    bottom: 40px;
+}
+
+#about{
+    margin: 20% 8% 0% 8%;
+    text-align: center;
+}
+.heading h1{
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heading span{
+    font-size: 20px;
+    color: brown;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about_content{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.about_details{
+    text-align: left;
+    padding-left:20px ;
+
+}
+.about-info{
+    /* height: 90%;  */
+    margin-top: 20px;
+    /* padding-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about_i{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    align-items: center;
+
+}
+.about_i p{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#skills{
+    margin: 4% 8% 0% 8%;
+    text-align: center;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+
+}
+.progress_container{
+    text-align: left;
+}
+.bar{
+    height: 8px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.skill_level{
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+}
+.skill_level h4{
+    padding: 10px;
+    padding-left: 0px;
+    
+}
+
+.per{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.bar_progress1{
+    background-color: brown;
+    height: 100%;
+    width:90%;
+}
+.bar_progress2{
+    background-color: brown;
+    height: 100%;
+    width:80%;
+}
+
+.bar_progress3{
+    background-color: brown;
+    height: 100%;
+    width:70%;
+}
+.bar_progress4{
+    background-color: brown;
+    height: 100%;
+    width:50%;
+}
+
+#contact{
+    margin: 4% 8% 0% 8%;
+    text-align: center;
+}
+
+.icon_set{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    /* padding-bottom: 50px; */
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon .fa-brands{
+    color: black;
+    /* transition: all .4s ease; */
+}
+
+/* .icon .fa-brands:hover{
+    color: brown;
+    transform: scale(1.5);
+} */
+
+.icon , .up_arrow{
+    width: 50px;
+    height: 50px;
+    display: flex;align-items: center;
+    justify-content: center;
+}
+
+.icon i{
+    font-size: 35px;
+}
+.icon .fa-brands{
+    padding: auto;
+}
+#footer_section{
+    margin: 4% 8% 0% 8%;
+    text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding-bottom: 50px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow,red);
+    border-radius: 50%;
+    transform: scale(1.2);
+    
+}
+
+.icon:hover i{
+    color: white;
+    animation:shake 0.75s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+
+}
+
+.up_arrow{
+    background-image: linear-gradient(to bottom right, yellow,red);
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 0%;
+    margin-bottom: 50px;
+}
